@@ -66,6 +66,7 @@ class Bus(Vehicle):
     def unassign_driver(self):
         self.driver = None
 
+    # class Vehicle also has these duck-typed methods start() and stop()
     def start(self):
         if self.driver:
             print(
@@ -104,6 +105,7 @@ bus.unassign_driver()
 bus.start()
 bus.stop()
 
+# Cannot access private attribute __milage, because its encapsulated
 try:
     print(bus.__milage)
 except AttributeError:
