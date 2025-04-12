@@ -94,7 +94,7 @@ else:
 
 
 # Employee object is created and exists independently
-driver = Employee("Charon", 20, 2000.0)
+driver = Employee("Charon", 20, 2000.0, "Driver")
 bus.assign_driver(driver)
 bus.start()
 bus.stop()
